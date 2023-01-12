@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="./img/academy-logo.svg" href="./img/academy-logo.svg">
+   <title>Infotecs JS Test</title>
+</head>
+
+<body>
+   <div class="wrapper">
+
+      <header class="header">
+         <div class="container">
+            <div class="sorting">
+               <h3 class="title">Sorting:</h3>
+               <select class="sortingSelect" name="sortingSelect" id="sortingSelect">
+                  <option selected value="">Select method</option>
+                  <option value="name">Name</option>
+                  <option value="price">Price</option>
+               </select>
+            </div>
+            <div class="amount">
+               <h3 class="title">Number per page: </h3>
+               <input class="amountInput" type="number" min="0" max="30">
+            </div>
+         </div>
+      </header>
+
+      <main class="main">
+         <div class="container">
+            <section class="content">
+               <ul class="draggableList"></ul>
+            </section>
+      </main>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="myInfo">
+               <span class="title">Dmitriy Tsyrov</span>
+               <ul class="contacts">
+                  <li class="link">
+                     <a href="https://www.linkedin.com/in/dmitriy-tsyrov-593509229/">
+                        <img src="./img/linkedIn.png" alt="fb">
+                     </a>
+                  </li>
+                  <li class="link">
+                     <a href="https://github.com/Dim070?tab=repositories">
+                        <img src="./img/gh.png" alt="fb">
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+   <script defer src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+}
+body {
+	font-family: Montserrat;
+	font-size: 14px;
+	color: #616161;
+}
+
+/* ------------------------------ */
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+/* ------------------------------ */
+.header, .footer {
+	background-color: #34e05fa4;
+	min-height: 50px;
+	padding: 10px;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+/* ------------------------------ */
+.myInfo, .amount, .sorting {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+}
+
+/* ------------------------------ */
+.sorting {
+	margin-bottom: 15px;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.amountInput, .sortingSelect {
+	width: 40px;
+	height: 20px;
+	border-radius: 4px;
+}
+
+.sortingSelect {
+	width: 110px;
+}
+
+.amountInput {
+	width: 60px;
+	padding: 5px;
+}
+
+.validation {
+	border: 2px solid red;
+}
+
+.labelValidation {
+	font-size: 12px;
+	font-weight: 700;
+	color: red;
+}
+
+
+/* ------------------------------ */
+.draggableList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.draggable {
+	width: 200px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 8px;
+	background-color: rgb(114, 206, 183);
+}
+
+.draggable:last-child {
+	position: relative;
+ }
+
+.card {
+	width: 280px;
+	position: absolute;
+	padding: 10px;
+	left: 101%;
+	border-radius: 0 10px 10px 10px;
+	border: 1px dashed red;;
+	background-color: lime;
+}
+
+#card__title {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#card__img {
+	display: block;
+	width: 80px;
+
+	border: 1px solid #40c40b85;
+	border-radius: 4px;
+}
+
+#card__price {
+	display: block;
+}
+
+/* ------------------------------ */
+ .card {
+	display: grid;
+	align-items: center;
+	gap: 5px;
+	grid-template-areas: 
+	"title img"
+	"price img"
+	"description img";
+
+	grid-template-rows: 60px 20px;
+}
+
+#card__title    { grid-area: title }
+#card__price    { grid-area: price }
+#card__img    { grid-area: img }
+#card__description    { grid-area: description }
+/* ------------------------------ */
+
+.contacts {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.link img {
+	width: 20px;
+	height: 20px;
+	color: white;
+}
+
+.active {
+	position: relative;
+	background-color: #40c40b85;
+}
+
+.over {
+	border: 2px solid #3fc40b;
+	border-radius: 8px;
+ }
