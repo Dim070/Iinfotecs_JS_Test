@@ -74,8 +74,6 @@ const slicing = () => {
       if (event.target.value >= minInputValue && event.target.value <= maxInputValue) {
          removeInputValidation()
          slicedDataCards = allDataCards.slice(0, +event.target.value)
-         //порезать listItems
-         // listItems = listItems.slice(0, event.target.value)
          createItem(slicedDataCards)
 
       } if (event.target.value > maxInputValue || event.target.value < minInputValue) {
